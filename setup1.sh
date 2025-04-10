@@ -41,8 +41,8 @@ if ! python --version 2>&1 | grep -q "Python 2.7"; then
 fi
 
 # Domain configuration
-echo "1. Use Our NT Domain Random"
-echo "2. Choose Your Own Domain"
+echo "1. Use Domain Name Tridns-v4v6"
+echo "2. Use Your Domain Name"
 read -rp "Input 1 or 2: " dns
 if [ "$dns" -eq 1 ]; then
     # Download cf script and convert line endings
@@ -86,11 +86,11 @@ echo "IP=" >> /var/lib/ipvps.conf
 
 # Installation summary
 echo "===================================="
-echo " _   _ _______     ______  _   _ "
-echo "| \ | |_   _\ \   / /  _ \| \ | |"
-echo "|  \| | | |  \ \ / /| |_) |  \| |"
-echo "| |\  | | |   \ V / |  __/| |\  |"
-echo "|_| \_| |_|    \_/  |_|   |_| \_|"
+echo "             W E L C O M E          "
+echo "                  T O               "
+echo "            S  C  R  I  P  T        "
+echo "         T   R   I   D   N   S      "
+echo "             V   4   V   6          "
 echo "===================================="        
 echo "Services and Ports:"
 echo " - OpenSSH: 22"
@@ -113,7 +113,7 @@ echo " - Vless gRPC: 443"
 echo " - Trojan gRPC: 443"
 echo " - Shadowsocks gRPC: 443"
 echo "=================================================================="
-echo "Contact: t.me/networktweakerop"
+echo "Contact Me: t.me/Tridns-v4v6"
 echo "=================================================================="
 
 # Additional commands
