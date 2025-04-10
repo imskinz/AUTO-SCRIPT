@@ -27,7 +27,7 @@ show_vps_info() {
     fi
 
     echo -e "\e[1;33m -------------------------------------------------\e[0m"
-    echo -e "\e[1;34m                     NT VIP AIO                    \e[0m"
+    echo -e "\e[1;34m                    TRIDNS V4V6                   \e[0m"
     echo -e "\e[1;33m -------------------------------------------------\e[0m"
     echo -e "\e[1;32m OS            \e[0m: $(hostnamectl | grep "Operating System" | cut -d ' ' -f5-)"
     echo -e "\e[1;32m Uptime        \e[0m: $uptime"
@@ -43,7 +43,7 @@ show_cpu_ram_info() {
     get_ram_info
     get_cpu_usage
 
-    echo -e "\e[1;34m                   NT CPU/RAM INFO                  \e[0m"
+    echo -e "\e[1;34m                  TRIDNS CPU | RAM INFO          \e[0m"
     echo -e "\e[1;33m -------------------------------------------------\e[0m"
     echo -e "\e[1;32m CPU USAGE   \e[0m: $cpu_usage"
     echo -e "\e[1;32m RAM USED    \e[0m: ${uram} MB"
@@ -57,7 +57,7 @@ show_menu() {
     show_vps_info
     show_cpu_ram_info
 
-    echo -e "\e[1;34m                      NT MENU                       \e[0m"
+    echo -e "\e[1;34m                  TRIDNS MENU                     \e[0m"
     echo -e "\e[1;33m -------------------------------------------------\e[0m"
     echo -e ""
     echo -e "\e[1;36m 1 \e[0m: Menu SSH"
@@ -73,8 +73,8 @@ show_menu() {
     echo -e "\e[1;33m -------------------------------------------------\e[0m"
     echo -e "\e[1;32m Client Name \e[0m: $Name"
     echo -e "\e[1;32m Expired     \e[0m: $Exp2"
-    echo -e "\e[1;32m SCRIPT BY   \e[0m: NETWORK TWEAKER"
-    echo -e "\e[1;32m MADE BY     \e[0m: CYBER NOVA AND EREN YEAGER"
+    echo -e "\e[1;32m SCRIPT NAME   \e[0m: Tridns"
+    echo -e "\e[1;32m MADE BY     \e[0m: Tinukierl"
     echo -e "\e[1;33m -------------------------------------------------\e[0m"
     echo -e ""
     read -p " Select menu :  " opt
@@ -96,7 +96,7 @@ show_menu() {
 # Initial setup
 domain=$(cat /etc/xray/domain)
 Exp2="NONE"
-Name="NETWORK TWEAKER"
+Name="Tridns"
 
 # Main loop to display menu continuously
 while true; do
